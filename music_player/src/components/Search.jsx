@@ -47,7 +47,7 @@ const Search = ({ setSearch, search, setArtist }) => {
         <h3>Artists:</h3>
         {search && search.artists && search.artists.items.map((artist, index) => (
           <div key={index}>
-            <a href='/songs' onClick={()=>setArtist(artist.data.profile.name)}>{artist.data.profile.name}</a>
+            <a href={`/songs/${artist.data.profile.name}`} onClick={()=>setArtist(artist.data.profile.name)}>{artist.data.profile.name}</a>
           </div>
         ))}
       </div>
