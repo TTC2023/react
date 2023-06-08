@@ -3,11 +3,12 @@ import axios from 'axios';
 import { SONG_API_URL, MUSIC_API_KEY } from './API';
 import { useParams } from 'react-router-dom';
 
-const SongList = ({ artist }) => {
+const SongList = () => {
     const { '*': artistId } = useParams();
     const tailArtistId = artistId.split(':').pop();
-
-    const [songs, setSongs] = useState([]);
+    const [albums, setAlbums] = useState("")
+    const [singles, setSingles] = useState("")
+    const [artist, setArtist] = useState("")
 
     useEffect(() => {
         const fetchSongs = async () => {
@@ -21,9 +22,10 @@ const SongList = ({ artist }) => {
                         'X-RapidAPI-Host': 'spotify23.p.rapidapi.com',
                     },
                 });
-                setSongs(response.data);
                 console.log(response.data);
-                console.log(tailArtistId);
+                setArtist(response.data.data.artist.profile.name);
+                setAlbums(response.data.data.artist.discography.albums.totalCount)
+                setSingles(response.data.data.artist.discography.singles.totalCount)
             } catch (error) {
                 console.error(error);
             }
@@ -34,9 +36,9 @@ const SongList = ({ artist }) => {
 
     return (
         <div>
-            <h2>Songs by {artist}:</h2>
-            <ul>
-            </ul>
+            <h2>Discography By: {artist}</h2>
+            <h3>Albums: {albums}</h3>
+            <h3>Singles: {singles}</h3>
         </div>
     );
 };
