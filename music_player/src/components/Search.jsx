@@ -3,11 +3,17 @@ import axios from 'axios';
 import './API';
 import { MUSIC_API_KEY, MUSIC_API_URL } from './API';
 
-const Search = ({ setSearch, search, setArtist }) => {
+const Search = ({ setSearch, search, setArtist, artist }) => {
   const [searchInput, setSearchInput] = useState("");
 
   const handleInputChange = (e) => {
     setSearchInput(e.target.value);
+  };
+
+  const handleArtist = (e) => {
+    const selectedArtist = e.target.innerText;
+    setArtist(selectedArtist);
+    console.log(selectedArtist);
   };
 
   const handleSearch = async () => {
@@ -47,7 +53,7 @@ const Search = ({ setSearch, search, setArtist }) => {
         <h3>Artists:</h3>
         {search && search.artists && search.artists.items.map((artist, index) => (
           <div key={index}>
-            <a href={`/songs/${artist.data.profile.name}`} onClick={()=>setArtist(artist.data.profile.name)}>{artist.data.profile.name}</a>
+            <a href={`/songs/${artist.data.uri}`} onClick={handleArtist}>{artist.data.profile.name}</a>
           </div>
         ))}
       </div>

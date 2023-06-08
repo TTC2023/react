@@ -14,12 +14,16 @@ function App() {
     console.log('Search updated:', search);
   }, [search]);
 
+  useEffect(() => {
+    console.log('Artist updated:', artist);
+  }, [artist]);
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Search search={search} setSearch={setSearch} setArtist={setArtist} />} />
+        <Route path='/' element={<Search search={search} setSearch={setSearch} artist={artist} setArtist={setArtist} />} />
         <Route path='/' element={<Result search={search} />} />
-        <Route path='/songs' element={<SongList artist={artist}/>}/>
+        <Route path='/songs/*' element={<SongList artist={artist}/>}/>
       </Routes>
     </BrowserRouter>
   );
