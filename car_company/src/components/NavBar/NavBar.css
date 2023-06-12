@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+}
+
+.img-fluid {
+    height: 8%;
+    width: 8%;
+}
+
+.top-nav{
+    color: white;
+    justify-content: center;
+    background: linear-gradient(to left, #000000, #808080);
+    height: 5%;
+    width: 100%;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+}
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+button {
+    height: 10%;
+    width: 5%;
+    text-align: center;
+}
