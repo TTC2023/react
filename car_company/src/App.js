@@ -12,10 +12,12 @@ function App() {
   }, [menu]);
 
   return (
-    <div className='App'>
+    <div>
       {menu && <SideBar setMenu={setMenu} />}
-      <FirstVehicle setMenu={setMenu} />
-      <SecondVehicle />
+      <div className={menu ? 'blur' :'App'}>
+        <FirstVehicle menu={menu} setMenu={setMenu} />
+        <SecondVehicle/>
+      </div>
     </div>
   );
 }
