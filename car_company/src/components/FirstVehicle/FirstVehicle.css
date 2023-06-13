@@ -35,6 +35,7 @@ video {
     margin: 0;
     font-size:large;
     color: white;
+    cursor: pointer;
 }
 
 .content {
