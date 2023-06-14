@@ -1,7 +1,8 @@
 import car_driving from '../../assets/car_driving.mp4';
-import './FirstVehicle.css';
+import './HomePage.css';
+import { Link } from 'react-router-dom';
 
-const FirstVehicle = ({ menu,setMenu }) => {
+const HomePage = ({ menu,setMenu }) => {
   const openMenu = () => {
     setMenu(true);
   };
@@ -19,10 +20,12 @@ const FirstVehicle = ({ menu,setMenu }) => {
         </button>
         <h1>Experience Tesba</h1>
         <p>Schedule a demo today</p>
-        <button className="btn btn-outline-light btn-transparent">Demo</button>
+        <Link to="/model">
+          <button Linkto='/model' className="btn btn-outline-light btn-transparent">Demo Drive</button>
+        </Link>
       </div>
     </div>
   );
 };
 
-export default FirstVehicle;
+export default HomePage;

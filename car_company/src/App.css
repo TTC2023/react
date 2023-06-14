@@ -1,3 +1,9 @@
+.app {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    margin: 0;
+}
+
 .sideBar {
     position: absolute;
     top: 0;
@@ -9,4 +15,10 @@
     width: 75%;
     position: fixed;
     filter: blur(5px);
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.vehicle {
+    scroll-snap-align: start;
 }

@@ -1,0 +1,12 @@
+.black_car{
+    height: 50vh;
+    width: 50%;
+    
+}
+
+.back_btn {
+    font-size: 20px;
+    position: fixed;
+    left: 25px;
+    color: white;
+}

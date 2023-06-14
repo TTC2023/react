@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import FirstVehicle from './components/FirstVehicle/FirstVehicle';
-import SecondVehicle from './components/SecondVehicle/SecondVehicle';
+import HomePage from './components/HomePage/HomePage'
+import DemoPage from './components/DemoPage/DemoPage'
 import SideBar from './components/NavBar/SideBar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -12,15 +13,18 @@ function App() {
   }, [menu]);
 
   return (
-    <div>
+    <BrowserRouter>
       {menu && <SideBar setMenu={setMenu} />}
-      <div className={menu ? 'blur' :'App'}>
-        <FirstVehicle menu={menu} setMenu={setMenu} />
-        <SecondVehicle/>
+      <div className={menu ? 'blur' : 'App'}>
+        <Routes>
+          <Route path="/" element={<HomePage className='vehicle' menu={menu} setMenu={setMenu} />} />
+          <Route path="/model" element={<DemoPage className='vehicle' menu={menu} setMenu={setMenu} />} />
+        </Routes>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
 
