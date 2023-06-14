@@ -36,6 +36,7 @@ button {
 
 .back_btn {
     font-size: 20px;
+    text-decoration: none;
     position: absolute;
     left: 25px;
     top: 10px;
