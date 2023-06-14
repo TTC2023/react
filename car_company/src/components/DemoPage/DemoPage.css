@@ -1,34 +1,52 @@
-
-.side_buttons{
+.side_buttons {
     display: flex;
     flex-direction: column;
     position: absolute;
+    margin: 20px;
     left: 30px;
-    top: 100px;
+    top: 175px;
     width: 20%;
 }
-    .model_button{
-        height: 55px;
-        margin: 20px;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5px;
-        cursor: pointer;
-    }
 
-.car{
+button {
+    height: 55px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.model_1 {
+    border-color: aqua;
+}
+
+.model_2 {
+    border-color: aqua;
+}
+
+.car {
     position: absolute;
     height: 50vh;
-    width: 50%;
+    width: 600px;
     right: 100px;
     top: 100px;
-    
+    border-radius: 5px;
 }
 
 .back_btn {
     font-size: 20px;
     position: absolute;
     left: 25px;
+    top: 10px;
     color: white;
     z-index: 1000;
+}
+
+.table-responsive {
+    position: absolute;
+    width: 600px;
+    right: 9%;
+    top: 70%;
+    cursor: pointer;
 }
