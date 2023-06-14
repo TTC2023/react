@@ -1,12 +1,34 @@
-.black_car{
+
+.side_buttons{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    width: 20%;
+}
+    .model_button{
+        height: 55px;
+        margin: 20px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+.car{
+    position: absolute;
     height: 50vh;
     width: 50%;
+    right: 100px;
+    top: 100px;
     
 }
 
 .back_btn {
     font-size: 20px;
-    position: fixed;
+    position: absolute;
     left: 25px;
     color: white;
+    z-index: 1000;
 }
