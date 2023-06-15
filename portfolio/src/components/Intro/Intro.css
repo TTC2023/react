@@ -1,0 +1,33 @@
+.introPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.wavy-outline {
+    display: inline-block;
+    padding: 10px;
+    border: 8px solid transparent;
+    border-image-slice: 50%;
+    border-image-repeat: round;
+}
+
+.content {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    width: 50%;
+}
+
+.blob {
+    position: absolute;
+    right: 15%;
+    top: 10%;
+    display: block;
+    width: 300px;
+    height: auto;
+    clip-path: ellipse(300px 140px at 20% 50%)
+}
+
