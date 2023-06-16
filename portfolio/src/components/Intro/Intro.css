@@ -6,28 +6,80 @@
     width: 100%;
 }
 
+@media (max-width: 850px) {
+    .introPage {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .blob img {
+        display: none;
+    }
+}
+
+
 .wavy-outline {
     display: inline-block;
     padding: 10px;
     border: 8px solid transparent;
     border-image-slice: 50%;
     border-image-repeat: round;
+    background-color: transparent;
+}
+
+.blob svg {
+    background-color: transparent;
 }
 
 .content {
+    color: white;
     position: absolute;
     left: 5%;
-    top: 10%;
+    top: 15%;
     width: 50%;
+    border-radius: 10%;
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#writing {
+    background-color: transparent;
+}
+
+p {
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 60px;
 }
 
 .blob {
     position: absolute;
-    right: 15%;
+    right: 10%;
     top: 10%;
     display: block;
     width: 300px;
     height: auto;
-    clip-path: ellipse(300px 140px at 20% 50%)
+    clip-path: ellipse(300px 140px at 20% 50%);
+    background-color: transparent;
 }
 
+.icon-container {
+    display: flex;
+}
+
+.icon-container .icon {
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+    cursor: pointer;
+}
