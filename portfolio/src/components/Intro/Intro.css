@@ -10,18 +10,23 @@
     .introPage {
         display: flex;
         flex-direction: column;
-        background-color: white;
     }
 
     .content {
+        margin-top: 300px;
+        margin-left: 25%;
         text-align: center;
+        justify-content: center;
     }
 
-    .blob img {
+    .blob {
+        margin-right: 10%;
+    }
+
+    .bottom-nav {
         display: none;
     }
 }
-
 
 .wavy-outline {
     display: inline-block;
@@ -51,10 +56,9 @@
 
 #writing {
     background-color: transparent;
-}
-
-p {
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -82,4 +86,26 @@ h1 {
     width: 40px;
     margin: 20px;
     cursor: pointer;
+}
+
+.bottom-nav {
+    position: absolute;
+    height: 20px;
+    display: flex;
+    top: 85%;
+    width: 100%;
+    justify-content: space-around;
+    text-decoration: underline;
+}
+
+.bottom-nav p {
+    color: white;
+    font-size: 35px;
+}
+
+button {
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
 }

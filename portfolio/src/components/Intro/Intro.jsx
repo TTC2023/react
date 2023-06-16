@@ -3,14 +3,17 @@ import github from '../../assets/github.png';
 import linkedin from '../../assets/linkedin.png';
 import selfie from "../../assets/selfie.jpg";
 
-const Intro = () => {
+
+const Intro = ({section, setSection}) => {
+
+
 
   return (
     <div className='introPage'>
       <div className='content'>
         <h1 id='writing'>Tyler Correll</h1>
         <h2 id='writing'>Front-End Web Developer</h2>
-        <p id='writing'>Passionate and driven Junior Front-End Developer with a strong background in entrepreneurship and project management. Recently completed a top-ranked Coding Bootcamp at Coding Dojo, acquiring skills in JavaScript, HTML, CSS, React, and other essential front-end technologies. Successfully launched and managed a gourmet coffee roasting and cold brew company, pivoting during COVID to develop a robust e-commerce platform with an engaging user interface. Adept at client relations, UI/UX design, responsive web development, and analytical problem-solving. Excited to apply my technical and business skills in a role focused on front-end development.</p>
+        <p id='writing'>Passionate and driven Junior Front-End Developer with a strong background in entrepreneurship and project management. Currently living in St. Louis, MO &#128075; </p>
         <div className='icon-container'>
           <a href='https://github.com/TTC2023'><img src={github} alt='github' className='icon' /></a>
           <a href='https://www.linkedin.com/in/tyler-correll-48087092/'><img src={linkedin} alt='linkedIn' className='icon' /></a>
@@ -40,6 +43,13 @@ const Intro = () => {
             clipPath="url(#shape)"
           />
         </svg>
+      </div>
+      <div className='bottom-nav'>
+        <button onClick={()=>setSection('experience')}>Experience</button>
+        <p>|</p>
+        <button onClick={()=>setSection('projects')}>Projects</button>
+        <p>|</p>
+        <button onClick={()=>setSection('contact')}>Let's Talk!</button>
       </div>
     </div>
   );
