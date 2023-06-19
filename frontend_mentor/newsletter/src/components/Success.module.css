@@ -1,0 +1,32 @@
+.success {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 50vh;
+    width: 30%;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.img {
+    position: relative;
+    right: 40%;
+    align-items: left;
+    height: 20%;
+}
+
+.content {
+    position: relative;
+    left: 5%;
+}
+
+.button {
+    width: 75%;
+    color: white;
+    background-color: rgb(8, 8, 54);
+    border: none;
+    height: 12%;
+    border-radius: 5px;
+}
