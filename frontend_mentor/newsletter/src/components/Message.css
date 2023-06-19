@@ -1,0 +1,46 @@
+.list {
+    display: flex;
+}
+
+.news {
+    background-color: white;
+    display: flex;
+    height: 80%;
+    width: 75%;
+    border-radius: 25px;
+    justify-content: space-between;
+}
+
+.picture{
+    width: 25%;
+    margin: 12px;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    height: 75vh;
+    margin-left: 25px;
+}
+
+.desktop-img {
+    height: 75vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    height: 30px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.error {
+    margin-left: 20px;
+    color: red;
+}
