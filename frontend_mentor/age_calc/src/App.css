@@ -1,0 +1,35 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(214, 209, 209);
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  background-color: white;
+  height: 80vh;
+  width: 60%;
+  border-radius: 25px;
+  border-bottom-right-radius: 40%;
+}
+
+.line {
+  width: 80%;
+  background-color: rgb(141, 130, 130);
+}
+
+.arrow{
+  background-color: purple;
+  border-radius: 100%;
+  margin-right: 5%;
+  margin-left: -15%;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* update this to center if you want the arrow to be in the center of the line */
+}
+
