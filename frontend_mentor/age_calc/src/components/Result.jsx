@@ -6,7 +6,7 @@ const Result = ({ageDay, ageMonth, ageYear}) => {
     <div className={styles.result}>
       <h1><span style={{color: 'purple'}}>{ageYear}</span> Years</h1>
       <h1><span style={{color: 'purple'}}>{ageMonth}</span> Months</h1>
-      <h1><span style={{color: 'purple'}}>{ageYear}</span>Days</h1>
+      <h1><span style={{color: 'purple'}}>{ageDay}</span>Days</h1>
     </div>
   )
 }

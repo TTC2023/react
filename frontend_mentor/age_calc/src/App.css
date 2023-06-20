@@ -33,3 +33,10 @@
   justify-content: space-between; /* update this to center if you want the arrow to be in the center of the line */
 }
 
+@media screen and (max-width: 750px) {
+  .arrow{
+    position: relative;
+    right: 38%;
+  }
+}
+

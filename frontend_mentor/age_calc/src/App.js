@@ -13,9 +13,13 @@ function App() {
   const [ageDay, setAgeDay] =useState("--")
 
   useEffect(() => {
-    if (day && month && year) {
+    if (day > 0 && day < 31 && month > 0 && month < 12 && year > 1901 && year < 2023) {
       const birthDate = new Date(`${year}-${month}-${day}`);
       getAge(birthDate);
+    } else{
+      setAgeYear("--")
+      setAgeDay("--")
+      setAgeMonth("--")
     }
   }, [day, month, year]);
 
