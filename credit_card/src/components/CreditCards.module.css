@@ -1,0 +1,71 @@
+.credit {
+    width: 50%;
+    height: 100vh;
+}
+
+.desktop {
+    width: 65%;
+    height: 100vh;
+}
+
+.cardBack {
+    position: absolute;
+    height: 25%;
+    width: 30%;
+    left: 20%;
+    top: 55%;
+    height: 25%;
+}
+
+.cardFront {
+    position: absolute;
+    height: 25%;
+    width: 30%;
+    left: 10%;
+    top: 25%;
+    height: 25%;
+}
+
+.cardLogo {
+    position: absolute;
+    top: 28%;
+    left: 12%;
+    height: 5%;
+    width: 6%;
+}
+
+.number {
+    position: absolute;
+    top: 33%;
+    left: 14%;
+    height: 12%;
+    display: inline-block; 
+    width: 100%;
+}
+
+.name {
+    position: absolute;
+    top: 42%;
+    left: 12%;
+    font-size: 12px;
+    display: inline-block; 
+    width: 15%;
+}
+
+.exp {
+    position: absolute;
+    top: 42%;
+    left: 32%;
+    font-size: 12px;
+    display: inline-block; 
+    width: 15%;
+}
+
+.cvc {
+    position: absolute;
+    top: 65%;
+    left: 42%;
+    font-size: 12px;
+    display: inline-block; 
+    width: 15%;
+}

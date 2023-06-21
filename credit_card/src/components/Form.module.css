@@ -1,0 +1,50 @@
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+}
+
+input {
+    color: gray;
+    border-color: 1px gray;
+    margin: 2%;
+    height: 25px;
+}
+
+.container {
+    width: 65%;
+}
+
+.inputRow{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    width: 100%;
+}
+
+.exp input {
+    width: 12%;
+}
+
+.date {
+    margin-left: 5%;
+}
+
+.cvc {
+    margin-left: 25%;
+}
+
+.inputRow label {
+    color: rgb(70, 9, 70);
+    margin-left: 10%;
+}
+
+.button {
+    background-color: rgb(70, 9, 70);
+    color: white;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+}
