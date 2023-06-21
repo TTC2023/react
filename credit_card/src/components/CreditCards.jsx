@@ -15,7 +15,7 @@ const CreditCards = (props) => {
         <img src={cardLogo} alt='cardLogo' className={styles.cardLogo}/>
         <p className={styles.name}>{props.name}</p>
         <p className={styles.number}>{props.number}</p>
-        <p className={styles.exp}>{props.exp}</p>
+        <p className={styles.exp}>{props.month}/{props.year}</p>
         <p className={styles.cvc}>{props.cvc}</p>
     </div>
   )

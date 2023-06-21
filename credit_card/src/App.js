@@ -7,13 +7,14 @@ function App() {
 
   const [name, setName] = useState('JANE APPLESEED')
   const [number, setNumber] = useState("0000 0000 0000 0000")
-  const [exp, setExp] = useState('00/00')
+  const [month, setMonth] =useState('00')
+  const [year, setYear] =useState('00')
   const [cvc, setCvc] = useState('000')
 
   return (
     <div className="App">
-      <CreditCards name={name} number={number} exp={exp} cvc={cvc}/>
-      <Form setName={setName} setNumber={setNumber} setExp={setExp} setCvc={setCvc}/>
+      <CreditCards name={name} number={number} cvc={cvc} month={month} year={year}/>
+      <Form setName={setName} setNumber={setNumber} setCvc={setCvc} setMonth={setMonth} setYear={setYear}/>
     </div>
   );
 }

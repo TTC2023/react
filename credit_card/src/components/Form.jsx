@@ -3,46 +3,63 @@ import styles from './Form.module.css'
 
 const Form = (props) => {
 
-  const handleName =(e)=>{
+  const handleName = (e) => {
     props.setName(e.target.value)
   }
 
   const handleNumber = (e) => {
-    let value = e.target.value.replace(/\s/g, ''); // Remove all spaces
-    value = value.slice(0, 16); // Limit to 16 digits
-
-    let formattedValue = '';
-    for (let i = 0; i < value.length; i++) {
-        if (i > 0 && i % 4 === 0) {
-            formattedValue += ' '; // Insert space every 4 digits
-        }
-        formattedValue += value[i];
+    let value = e.target.value.replace(/\s/g, '');  // Remove any existing spaces
+    if (value.length > 16) {
+      value = value.slice(0, 16); // Limit the length to 16 digits
     }
-  
-    props.setNumber(formattedValue);
-}
+
+    // Insert a space after every 4 digits
+    value = value.replace(/(\d{4})/g, '$1 ').trim();
+
+    props.setNumber(value);
+  }
+
+  const handleMonth = (e) => {
+    let value = e.target.value
+    if (value < 10) {
+      value = '0' + e.target.value
+    }
+    props.setMonth(value)
+  }
+
+  const handleYear = (e) => {
+    props.setYear(e.target.value)
+  }
+
+  const handleCvc = (e) => {
+    let value = e.target.value
+    if (value.length > 3) {
+      return e.target.value
+    }
+    props.setCvc(e.target.value)
+  }
 
 
   return (
     <div className={styles.form}>
       <div className={styles.container}>
-      <form action="" className={styles.formStyle} onSubmit={(e) => e.preventDefault()}>
+        <form action="" className={styles.formStyle} onSubmit={(e) => e.preventDefault()}>
           <div className={styles.inputRow}>
             <label>CARDHOLDER NAME</label>
-            <input type="text" placeholder='e.g Jane Appleseed' onChange={handleName}/>
+            <input type="text" placeholder='e.g Jane Appleseed' required onChange={handleName} />
           </div>
           <div className={styles.inputRow}>
             <label>CARDHOLDER NUMBER</label>
-            <input type="text" placeholder='e.g 0000 0000 0000 0000'  onChange={handleNumber}/>
+            <input type="text" placeholder='e.g 0000 0000 0000 0000' pattern="^\d{4} \d{4} \d{4} \d{4}$" required onChange={handleNumber} />
           </div>
           <div className={styles.inputRow}>
             <div className={styles.exp}>
               <label>EXP. DATE (MM/YY)</label>
               <label>CVC</label>
               <div>
-                <input className={styles.date} type="number" min="1" max="12" placeholder='MM' />
-                <input className={styles.date} type="number" min="23" max="30" placeholder='YY' />
-                <input className={styles.cvc} type="text" placeholder='e.g 123' />
+                <input className={styles.date} type="number" min="1" max="12" placeholder='MM' pattern="^\d{2}$" required onChange={handleMonth} />
+                <input className={styles.date} type="number" min="23" max="30" placeholder='YY' pattern="^\d{2}$" required onChange={handleYear} />
+                <input className={styles.cvc} type="number" placeholder='e.g 123' pattern="^\d{3}$" required onChange={handleCvc} />
               </div>
             </div>
           </div>
