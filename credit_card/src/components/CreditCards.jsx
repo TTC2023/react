@@ -13,8 +13,8 @@ const CreditCards = (props) => {
         <img src={cardBack} alt='cardBack' className={styles.cardBack}/>
         <img src={cardFront} alt='cardFront' className={styles.cardFront}/>
         <img src={cardLogo} alt='cardLogo' className={styles.cardLogo}/>
-        <h3 className={styles.number}>{props.number}</h3>
         <p className={styles.name}>{props.name}</p>
+        <p className={styles.number}>{props.number}</p>
         <p className={styles.exp}>{props.exp}</p>
         <p className={styles.cvc}>{props.cvc}</p>
     </div>

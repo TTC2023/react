@@ -7,9 +7,21 @@ const Form = (props) => {
     props.setName(e.target.value)
   }
 
-  const handleNumber =(e)=>{
-    props.setNumber(e.target.value)
-  }
+  const handleNumber = (e) => {
+    let value = e.target.value.replace(/\s/g, ''); // Remove all spaces
+    value = value.slice(0, 16); // Limit to 16 digits
+
+    let formattedValue = '';
+    for (let i = 0; i < value.length; i++) {
+        if (i > 0 && i % 4 === 0) {
+            formattedValue += ' '; // Insert space every 4 digits
+        }
+        formattedValue += value[i];
+    }
+  
+    props.setNumber(formattedValue);
+}
+
 
   return (
     <div className={styles.form}>
@@ -20,9 +32,8 @@ const Form = (props) => {
             <input type="text" placeholder='e.g Jane Appleseed' onChange={handleName}/>
           </div>
           <div className={styles.inputRow}>
-            {/* not working, cannot type in input */}
             <label>CARDHOLDER NUMBER</label>
-            <input type="text" placeholder='e.g 0000 0000 0000 0000' onChange={handleNumber} />
+            <input type="text" placeholder='e.g 0000 0000 0000 0000'  onChange={handleNumber}/>
           </div>
           <div className={styles.inputRow}>
             <div className={styles.exp}>

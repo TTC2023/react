@@ -28,8 +28,12 @@ input {
     width: 12%;
 }
 
+.exp label {
+    margin-right: 16%;
+}
+
 .date {
-    margin-left: 5%;
+    /* margin-left: 5%; */
 }
 
 .cvc {
@@ -38,7 +42,7 @@ input {
 
 .inputRow label {
     color: rgb(70, 9, 70);
-    margin-left: 10%;
+    margin-left: 2%;
 }
 
 .button {
