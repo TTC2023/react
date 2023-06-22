@@ -1,3 +1,12 @@
+@media screen and (max-width: 750px) {
+    .credit{
+        display: flex;
+        height: 50vh;
+        width: 100%;
+    }
+
+}
+
 .credit {
     width: 50%;
     height: 100vh;
