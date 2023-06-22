@@ -9,6 +9,9 @@ const MobileCreditCards = () => {
   return (
     <div className={styles.mobileCC}>
         <img className={styles.bg} src={mobile} alt='bg-image'/>
+        <img className={styles.mobileBack} src={cardBack} alt="card-back" />
+        <img className={styles.mobileFront} src={cardFront} alt="card-front" />
+        <img className={styles.mobileLogo} src={cardLogo} alt="card-logo" />
     </div>
   )
 }

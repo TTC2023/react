@@ -6,4 +6,19 @@
 .bg{
     width: 100%;
     margin-top: 0%;
+    height: 100%;
+}
+
+.mobileBack{
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    width: 80%;
+}
+
+.mobileFront{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 80%;
 }
