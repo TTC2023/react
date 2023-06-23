@@ -4,6 +4,7 @@ import Experience from "./components/Experience/Experience";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects"
 import { useState, useRef, useEffect } from "react";
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
   const [section, setSection] = useState('');
@@ -29,8 +30,11 @@ function App() {
 
   return (
     <div className="App">
+      <div className="nav">
+        <NavBar setSection={setSection}/>
+      </div>
       <div className="Intro" ref={introRef}>
-        <Intro section={section} setSection={setSection} />
+        <Intro />
       </div>
       <div className="experience" ref={experienceRef}>
         <Experience />

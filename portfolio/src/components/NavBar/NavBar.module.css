@@ -1,0 +1,12 @@
+.action {
+    color: #178582;
+}
+
+.fort {
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    height: 50px;
+    color:#178582;
+    width: 50%;
+}

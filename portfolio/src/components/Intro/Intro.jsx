@@ -2,11 +2,12 @@ import './Intro.css';
 import github from '../../assets/github.png';
 import linkedin from '../../assets/linkedin.png';
 import selfie from "../../assets/selfie.jpg";
+import { useState } from 'react';
 
 
-const Intro = ({section, setSection}) => {
+const Intro = () => {
 
-
+  const [action, setAction] = useState('')
 
   return (
     <div className='introPage'>
@@ -18,6 +19,10 @@ const Intro = ({section, setSection}) => {
           <a href='https://github.com/TTC2023'><img src={github} alt='github' className='icon' /></a>
           <a href='https://www.linkedin.com/in/tyler-correll-48087092/'><img src={linkedin} alt='linkedIn' className='icon' /></a>
         </div>
+        <button className='resume' onClick={() => window.open("/resume.pdf", "_blank")}>
+          Check out my Resume!
+        </button>
+
       </div>
       <div className="blob">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" id="blobSvg" style={{ opacity: 1 }}>
@@ -43,13 +48,6 @@ const Intro = ({section, setSection}) => {
             clipPath="url(#shape)"
           />
         </svg>
-      </div>
-      <div className='bottom-nav'>
-        <button onClick={()=>setSection('experience')}>Experience</button>
-        <p>|</p>
-        <button onClick={()=>setSection('projects')}>Projects</button>
-        <p>|</p>
-        <button onClick={()=>setSection('contact')}>Let's Talk!</button>
       </div>
     </div>
   );
