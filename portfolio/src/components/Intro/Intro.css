@@ -43,16 +43,10 @@
 }
 
 .content {
-    color: black;
-    position: absolute;
-    left: 5%;
-    top: 25%;
-    width: 50%;
-    border-radius: 10%;
-    background-color: transparent;
-    align-items: center;
     display: flex;
     flex-direction: column;
+    width: 50%;
+    margin-right: 25%;
 }
 
 #writing {
@@ -61,10 +55,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2%;
 }
 
 h1 {
-    font-family: 'Brush Script MT', cursive;
+    font-family: Open Sans, Roboto, Lato;
     font-size: 60px;
     color: white
 }
@@ -72,7 +67,8 @@ h1 {
 .blob {
     position: absolute;
     right: 10%;
-    top: 20%;
+    margin-left: 2%;
+    top: 25%;
     display: block;
     width: 300px;
     height: auto;
@@ -83,11 +79,21 @@ h1 {
 .icon-container {
     display: flex;
     background-color: #0A1828;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.link{
+    margin-top: 5%;
 }
 
 .icon-container .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 40px;
-    width: 40px;
+    width: 50%;
     margin: 20px;
     cursor: pointer;
     background-color: transparent;

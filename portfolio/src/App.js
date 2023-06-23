@@ -27,23 +27,24 @@ function App() {
       contactRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   }, [section]);
-
+  
   return (
     <div className="App">
       <div className="nav">
         <NavBar setSection={setSection}/>
       </div>
+      <div class="squiggly-line"></div>
       <div className="Intro" ref={introRef}>
-        <Intro />
+        {section === 'intro' && <Intro setSection={setSection} />}
       </div>
       <div className="experience" ref={experienceRef}>
-        <Experience />
+        {section === 'experience' && <Experience setSection={setSection} />}
       </div>
       <div className="projects" ref={projectsRef}>
-        <Projects />
+        {section === 'projects' && <Projects setSection={setSection} />}
       </div>
       <div className="contact" ref={contactRef}>
-        <Contact />
+        {section === 'contact' && <Contact setSection={setSection} />}
       </div>
     </div>
   );

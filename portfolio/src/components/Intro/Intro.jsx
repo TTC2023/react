@@ -16,13 +16,12 @@ const Intro = () => {
         <h2 id='writing'>Front-End Web Developer</h2>
         <p id='writing'>Passionate and driven Junior Front-End Developer with a strong background in entrepreneurship and project management. Currently living in St. Louis, MO &#128075; </p>
         <div className='icon-container'>
-          <a href='https://github.com/TTC2023'><img src={github} alt='github' className='icon' /></a>
-          <a href='https://www.linkedin.com/in/tyler-correll-48087092/'><img src={linkedin} alt='linkedIn' className='icon' /></a>
+          <a className='link' href='https://github.com/TTC2023'><img src={github} alt='github' className='icon' /></a>
+          <a className='link' href='https://www.linkedin.com/in/tyler-correll-48087092/'><img src={linkedin} alt='linkedIn' className='icon' /></a>
+          <button className='resume' onClick={() => window.open("/resume.pdf", "_blank")}>
+            Check out my Resume!
+          </button>
         </div>
-        <button className='resume' onClick={() => window.open("/resume.pdf", "_blank")}>
-          Check out my Resume!
-        </button>
-
       </div>
       <div className="blob">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" id="blobSvg" style={{ opacity: 1 }}>

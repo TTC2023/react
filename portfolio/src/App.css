@@ -5,3 +5,15 @@
     left: 55%;
     top: 5%;
 }
+
+.squiggly-line {
+    position: absolute;
+    bottom : 82%;
+    width: 90%;
+    left: 5%;
+    height: 5%;
+    background: 
+        radial-gradient(circle at 100% 50%, transparent 20%, #BFA181 21%, #BFA181 29%, transparent 30%),
+        radial-gradient(circle at 0% 50%, transparent 20%, #BFA181 21%, #BFA181 29%, transparent 30%);
+    background-size: 10px 100%;
+}
