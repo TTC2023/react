@@ -41,12 +41,18 @@
     background-color: #BFA181;
 }
 
-.CD {
+.fadeIn {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #BFA181;
     margin: 2%;
+    animation: fadeInEffect 2s forwards;
+}
+
+@keyframes fadeInEffect {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .message {

@@ -7,7 +7,7 @@ import { useState, useRef, useEffect } from "react";
 import NavBar from "./components/NavBar/NavBar";
 
 function App() {
-  const [section, setSection] = useState('');
+  const [section, setSection] = useState('intro');
 
   // Refs for each component
   const introRef = useRef(null);
@@ -15,18 +15,18 @@ function App() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
-  // Scroll to the selected section when the section state changes
-  useEffect(() => {
-    if (section === 'intro') {
-      introRef.current.scrollIntoView({ behavior: 'smooth' });
-    } else if (section === 'experience') {
-      experienceRef.current.scrollIntoView({ behavior: 'smooth' });
-    } else if (section === 'projects') {
-      projectsRef.current.scrollIntoView({ behavior: 'smooth' });
-    } else if (section === 'contact') {
-      contactRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, [section]);
+  // // Scroll to the selected section when the section state changes
+  // useEffect(() => {
+  //   if (section === 'intro') {
+  //     introRef.current.scrollIntoView({ behavior: 'smooth' });
+  //   } else if (section === 'experience') {
+  //     experienceRef.current.scrollIntoView({ behavior: 'smooth' });
+  //   } else if (section === 'projects') {
+  //     projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+  //   } else if (section === 'contact') {
+  //     contactRef.current.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // }, [section]);
   
   return (
     <div className="App">
