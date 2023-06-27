@@ -13,23 +13,47 @@
     grid-template-columns: 1fr 1fr 1fr; /* divides the grid into three equal columns */
     grid-template-rows: 1fr 1fr 1fr; /* divides the grid into three equal rows */
     justify-content: center;
-    height: 80%;
+    height: 70%;
     width: 80%;
-    top: 20%;
+    top: 30%;
     right: 10%;
     left: 10%;
+    gap: 4%;
+}
+
+.icons {
+    display: flex;
+    background-color: transparent;
+    color: #BFA181;
+    margin-left: 35%;
+}
+
+.link{
+    color: #BFA181;
+    margin-left: 10% ;
 }
 
 .card {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
     border: 1px solid #BFA181;
+    border-radius: 15px;
 }
 
-.card:hover {
-    background-color: red;
+.card p {
+    color: #BFA181;
+    margin: 2%;
+    text-align: center;
 }
+
+.content {
+    color: #BFA181;
+    background-color: transparent;
+}
+
+
 
 

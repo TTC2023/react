@@ -14,7 +14,7 @@ const Intro = () => {
       <div className='content'>
         <h1 id='writing'>Tyler Correll</h1>
         <h2 id='writing'>Front-End Web Developer</h2>
-        <p id='writing'>Passionate and driven Junior Front-End Developer with a strong background in entrepreneurship and project management. Currently living in St. Louis, MO &#128075; </p>
+        <p className='description'>Passionate and driven Junior Front-End Developer looking for full-time positions in the St. Louis area with a strong background in entrepreneurship and project management.  &#128075; </p>
         <div className='icon-container'>
           <a className='link' href='https://github.com/TTC2023'><img src={github} alt='github' className='icon' /></a>
           <a className='link' href='https://www.linkedin.com/in/tyler-correll-48087092/'><img src={linkedin} alt='linkedIn' className='icon' /></a>

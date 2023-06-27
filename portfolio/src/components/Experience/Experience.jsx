@@ -1,6 +1,11 @@
 import React from 'react'
 import styles from './Experience.module.css'
 import { useState } from 'react';
+import HPU from '../../assets/HPU.png';
+import ocwen from '../../assets/ocwen.png';
+import ce from '../../assets/ce.jpg';
+import bb from '../../assets/bb.png';
+import cd from '../../assets/cd.png';
 
 const Projects = () => {
   const [activeBubble, setActiveBubble] = useState('HPU');
@@ -14,11 +19,11 @@ const Projects = () => {
   return (
     <div className={styles.projectsPage}>
       <div className={styles.bubbles}>
-        <button onMouseEnter={() => setActiveBubble('HPU')} className={styles.bubble}>HPU</button>
-        <button onMouseEnter={() => setActiveBubble('OC')} className={styles.bubble}>OC</button>
-        <button onMouseEnter={() => setActiveBubble('CE')} className={styles.bubble}>CE</button>
-        <button onMouseEnter={() => setActiveBubble('BB')} className={styles.bubble}>BB</button>
-        <button onMouseEnter={() => setActiveBubble('CD')} className={styles.bubble}>CD</button>
+        <button onMouseEnter={() => setActiveBubble('HPU')} className={styles.bubble}><img src={HPU} alt="HPU" /></button>
+        <button onMouseEnter={() => setActiveBubble('OC')} className={styles.bubble}><img src={ocwen} alt="ocwen" /></button>
+        <button onMouseEnter={() => setActiveBubble('CE')} className={styles.bubble}><img src={ce} alt="ce" /></button>
+        <button onMouseEnter={() => setActiveBubble('BB')} className={styles.bubble}><img src={bb} alt="bb" /></button>
+        <button onMouseEnter={() => setActiveBubble('CD')} className={styles.bubble}><img src={cd} alt="cd" /></button>
       </div>
       <div className={styles.container}>
           {activeBubble === 'HPU' && (

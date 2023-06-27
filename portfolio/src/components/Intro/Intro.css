@@ -7,27 +7,7 @@
     background: #0A1828;
 }
 
-@media (max-width: 850px) {
-    .introPage {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .content {
-        margin-top: 300px;
-        margin-left: 25%;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .blob {
-        margin-right: 10%;
-    }
-
-    .top-nav {
-        display: none;
-    }
-}
 
 .wavy-outline {
     display: inline-block;
@@ -56,6 +36,18 @@
     justify-content: center;
     align-items: center;
     margin-top: 2%;
+    text-align: center;
+}
+
+.description {
+    background-color: transparent;
+    color: #BFA181;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    text-align: center;
+    line-height: 150%;
 }
 
 h1 {
