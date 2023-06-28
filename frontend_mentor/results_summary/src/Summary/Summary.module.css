@@ -1,0 +1,142 @@
+.container {
+    border-radius: 20px;
+    display: flex;
+    width: 80%;
+    height: 75vh;
+    box-shadow: 5px 5px 10px rgb(109, 106, 106);
+}
+
+@media (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin-left: 5%;
+}
+
+img {
+    height: 10%;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.reaction {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10%;
+    width: 90%;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    background-color: rgb(244, 233, 233);
+}
+
+.reaction img {
+    margin-top: 4%;
+    height: 90%;
+    width: 10%;
+}
+
+.memory {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10%;
+    width: 90%;
+    margin-bottom: 5%;
+    border-radius: 15px;
+    background-color: rgb(229, 237, 209);
+}
+
+.memory img {
+    margin-top: 4%;
+    height: 90%;
+    width: 10%;
+}
+
+.verbal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10%;
+    width: 90%;
+    margin-bottom: 5%;
+    border-radius: 15px;
+    background-color: rgb(200, 238, 205);
+}
+
+.verbal img {
+    margin-top: 4%;
+    height: 90%;
+    width: 10%;
+}
+
+.visual {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10%;
+    width: 90%;
+    margin-bottom: 5%;
+    border-radius: 15px;
+    background-color: rgb(200, 200, 238);
+}
+
+.visual img {
+    margin-top: 4%;
+    height: 90%;
+    width: 10%;
+}
+
+button {
+    color: white;
+    width: 90%;
+    height: 10%;
+    border-radius: 25px;
+    background-color: #303b59;
+    border: none;
+    font-size: larger;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: #6748ef;
+    color: white;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 45%;
+    width: 65%;
+    border-radius: 100%;
+    background-image: linear-gradient(#4d3bcf, #4945ee);
+}
+
+.average {
+    text-align: center;
+    height: 50%;
+    font-size: 85px;
+    margin: 2%;
+}
+
+.content {
+    width: 50%;
+    text-align: center;
+}
