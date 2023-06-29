@@ -3,7 +3,7 @@ import styles from './Projects.module.css'
 import { GoLinkExternal } from "react-icons/go"
 import { AiFillGithub } from "react-icons/ai";
 import car from '../../assets/car_company.png'
-import age_calc from '../../assets/age_calc.png'
+import snap from '../../assets/snap.png'
 import credit_card from '../../assets/credit_card.png'
 import newsletter from '../../assets/newsletter.png'
 import quotes from '../../assets/quotes.png'
@@ -65,10 +65,10 @@ const Experience = () => {
         </div>
         <div className={styles.card}>
           {background[3] ? 
-            <img onMouseEnter={() => backgroundToggle(3)} className={styles.cardImg} src={age_calc} alt='age'></img> :
+            <img onMouseEnter={() => backgroundToggle(3)} className={styles.cardImg} src={snap} alt='age'></img> :
             <div onMouseLeave={() => backgroundToggle(3)}>
-              <h2 className={styles.content}>Age Calculator</h2>
-              <p>I developed a an age calculator that calculates the age of whatever date you input.</p>
+              <h2 className={styles.content}>Snap Website</h2>
+              <p>I developed a frontend website from a wireframe.</p>
               <div className={styles.icons}>
                 <a href="https://react-bdba.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.link}><GoLinkExternal size={20} /></a>
               </div>

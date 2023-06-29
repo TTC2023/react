@@ -5,6 +5,60 @@
     width: 100%;
 }
 
+.arrow{
+    cursor: pointer;
+    height: 5%;
+}
+.features{
+    display: flex;
+    z-index: 1000;
+    cursor: pointer;
+    align-items: center;
+}
+
+.featureList {
+    position: absolute;
+    top: 8%;
+    width: 8%;
+    left: 9%;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid black;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+.companyList {
+    position: absolute;
+    top: 8%;
+    width: 8%;
+    left: 24%;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid black;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+.tasks{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.tasks img {
+    height: 5%;
+    align-items: center;
+    margin-right: 3%;
+}
+
+.companies{
+    display: flex;
+    z-index: 1000;
+    cursor: pointer;
+    align-items: center;
+}
+
 .links{
     display: flex;
     width: 50%;
@@ -15,12 +69,14 @@
 a {
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 .login{
     background-color: transparent;
     border: none;
     font-size: 100%;
+    cursor: pointer;
 }
 
 .register {
@@ -31,6 +87,7 @@ a {
     height: 50%;
     width: 100%;
     margin-left: 10%;
+    cursor: pointer;
 }
 
 .signIn{
