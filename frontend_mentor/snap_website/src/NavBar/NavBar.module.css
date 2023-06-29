@@ -1,9 +1,45 @@
 .navBar {
-
+    display: flex;
+    justify-content: space-between;
     height: 10vh;
     width: 100%;
 }
 
-.links {
-    height: 100%;
+.links{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.login{
+    background-color: transparent;
+    border: none;
+    font-size: 100%;
+}
+
+.register {
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 100%;
+    border-radius: 10px;
+    height: 50%;
+    width: 100%;
+    margin-left: 10%;
+}
+
+.signIn{
+    display: flex;
+    margin-right: 10%;
+    align-items: center;
+}
+
+.logo {
+    margin: 1%;
+    margin-top: 2%;
 }
