@@ -32,8 +32,7 @@ const Experience = () => {
               <h2 className={styles.content}>Car Company</h2>
               <p>I designed and implemented an interactive car sales website.</p>
               <div className={styles.icons}>
-                <div><AiFillGithub size={20} /></div>
-                <a href="https://github.com/TTC2023/react/tree/master/car_company" target="_blank" rel="noopener noreferrer" className={styles.link}><GoLinkExternal size={20} /></a>
+                <a href="https://react-edo6bzxoh-ttc2023.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.link}><GoLinkExternal size={20} /></a>
               </div>
             </div>
           }
@@ -71,8 +70,7 @@ const Experience = () => {
               <h2 className={styles.content}>Age Calculator</h2>
               <p>I developed a an age calculator that calculates the age of whatever date you input.</p>
               <div className={styles.icons}>
-                <div><AiFillGithub size={20} /></div>
-                <a href="https://github.com/TTC2023/react/tree/master/frontend_mentor/age_calc" target="_blank" rel="noopener noreferrer" className={styles.link}><GoLinkExternal size={20} /></a>
+                <a href="https://react-bdba.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.link}><GoLinkExternal size={20} /></a>
               </div>
             </div>
           }
@@ -84,8 +82,7 @@ const Experience = () => {
               <h2 className={styles.content}>Credit Card Website</h2>
               <p onMouseLeave={() => backgroundToggle(4)}>I developed a credit card form that validates the inputs.</p>
               <div className={styles.icons}>
-                <div><AiFillGithub size={20} /></div>
-                <a href="https://github.com/TTC2023/react/tree/master/credit_card" target="_blank" rel="noopener noreferrer" className={styles.link}><GoLinkExternal size={20} /></a>
+                <a href="https://react-qobb.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.link}><GoLinkExternal size={20} /></a>
               </div>
             </div>
           }

@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    width: 80%;
+    height: 80vh;
+}
+
+.content {
+    width: 50%;
+    height: 80vh;
+    padding: 5%;
+}
+
+.content h1{
+    margin-bottom: 10%;
+    font-size: 60px;
+}
+
+.content p {
+    width: 75%;
+    font-weight: lighter;
+}
+
+.content button {
+    margin-top: 5%;
+    height: 8%;
+    width: 40%;
+    border-radius: 15px;
+    background-color: #151515;
+    color: white;
+    border: none;
+    cursor:pointer;
+}
+
+.logo {
+    width: 20%;
+    height: 50%;
+}
+
+.companies{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    margin-top: 20%;
+}
+
+.workerImg {
+    width: 50%;
+    height: 100%;
+}
+
+.workerImg img {
+    height: 100%;
+    width: 100%;
+}
