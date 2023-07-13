@@ -8,65 +8,72 @@
 }
 
 .container {
-    position: absolute;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* divides the grid into three equal columns */
-    grid-template-rows: 1fr 1fr 1fr; /* divides the grid into three equal rows */
-    justify-content: center;
-    height: 70%;
-    width: 80%;
-    top: 30%;
-    right: 10%;
-    left: 10%;
-    gap: 4%;
-}
-
-.icons {
-    display: flex;
-    background-color: transparent;
-    color: #BFA181;
-    margin-left: 35%;
-}
-
-.link{
-    color: #BFA181;
-    margin-left: 10% ;
-}
-
-.card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    border: 1px solid #BFA181;
-    border-radius: 15px;
-}
-
-.cardImg{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
     width: 100%;
-    border: 1px solid #BFA181;
+    height: 70vh;
+    margin-top: 8%;
+}
+
+.container h1 {
+    margin-bottom: 2%;
+    color: #BFA181;
+
+}
+
+.mainImg {
+    width: 60%;
+    height: 100%;
     border-radius: 15px;
 }
 
-
-.card p {
-    color: #BFA181;
-    margin: 2%;
-    text-align: center;
+.project {
+    display: flex;
+    width: 80%;
+    height: 100%;
 }
 
-.content {
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    margin-left: 5%;
     color: #BFA181;
-    background-color: transparent;
-    text-align: center;
 }
 
+.description a {
+    color: #378582;
+}
 
+.description h2 {
+    margin-top: 40%;
+    margin-bottom: 5%;
+}
 
+.description p {
+    display: flex;
+    text-align: center;
+    width: 90%;
+    margin-bottom: 10%;
+}
 
+.arrows {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    width: 80%;
+    height: 15%;
+}
+
+.arrows img {
+    background-color: #BFA181;
+    border-radius: 100%;
+    width: 10%;
+    padding: 2%;
+    cursor: pointer;
+}
