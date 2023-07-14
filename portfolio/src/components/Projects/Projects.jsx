@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styles from './Projects.module.css'
 import e_commerce from '../../assets/e-commerce.png'
 import snap from '../../assets/snap.png'
-import credit_card from '../../assets/credit_card.png'
+import comments from '../../assets/comments.png'
 import newsletter from '../../assets/newsletter.png'
 import quotes from '../../assets/quotes.png'
 import calculator from '../../assets/calculator.png'
@@ -12,17 +12,17 @@ import previous from '../../assets/icon-previous.svg'
 const Experience = () => {
 
   const [selected, setSelected] = useState(0)
-  const image = [e_commerce, calculator, snap, credit_card, newsletter, quotes]
-  const header = ["E-Commerce Website", "Functioning Calculator", "Landing Webpage", "Credit Card Form", "NewsLetter", "Quotes API"]
+  const image = [e_commerce, calculator, snap, comments, newsletter, quotes]
+  const header = ["E-Commerce Website", "Functioning Calculator", "Landing Webpage", "Comment Wall", "NewsLetter", "Quotes API"]
   const paragraph = [
     "I developed a full-functioning product page for an e-commerce website.",
-    "I developed a fully operational calculator.",
+    "I developed a fully functioning mathematical calculator.",
     "I developed a well-designed SEO-friendly landing page",
-    "I developed a verification form for credit card information.",
+    "I developed a twitter-like social media discussion board.",
     "I developed a newsletter from a pre-made wireframe.",
     "I developed a random inspirational quotes page using a third-party API"
   ]
-  const link = ['https://frontend-mentor-1-six.vercel.app/','','https://react-6qip.vercel.app/', 'https://react-qobb.vercel.app/', '','']
+  const link = ['https://frontend-mentor-1-six.vercel.app/','','https://react-6qip.vercel.app/', 'https://react-kcu6.vercel.app/', '','']
 
   const handleNext = () => {
     if(selected < 5){
