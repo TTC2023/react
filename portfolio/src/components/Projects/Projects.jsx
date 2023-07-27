@@ -22,7 +22,7 @@ const Experience = () => {
     "I developed a newsletter from a pre-made wireframe.",
     "I developed a random inspirational quotes page using a third-party API"
   ]
-  const link = ['https://frontend-mentor-1-six.vercel.app/','','https://react-6qip.vercel.app/', 'https://react-kcu6.vercel.app/', '','']
+  const link = ['https://frontend-mentor-1-six.vercel.app/',,'https://react-6qip.vercel.app/', 'https://react-kcu6.vercel.app/',,]
 
   const handleNext = () => {
     if(selected < 5){
