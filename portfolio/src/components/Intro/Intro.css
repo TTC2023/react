@@ -7,8 +7,6 @@
     background: #0A1828;
 }
 
-
-
 .wavy-outline {
     display: inline-block;
     padding: 10px;
@@ -18,14 +16,43 @@
     background-color: transparent;
 }
 
-.blob svg {
-    background-color: transparent;
+@media (max-width: 910px) {
+    .blob {
+        position: relative;
+        /* Change position to relative to keep it within the content flow */
+        top: 0;
+        /* Reset the top value to its default */
+        right: 0;
+        left: 30%;
+        /* Reset the right value to its default */
+        margin-left: 0;
+        /* Reset margin-left to its default */
+        margin-bottom: 2%;
+        /* Add some space between the image and the content */
+        width: 100%;
+        /* Make the image take the full width */
+        clip-path: none;
+        /* Remove clip-path to make the image fully visible */
+    }
+
+    .content {
+        position: relative;
+        width: 100%;
+        /* Make the content take the full width */
+        top: 50%;
+        left: 15%;
+        /* Reset margin-right to its default */
+    }
+
+    .blob svg {
+        background-color: transparent;
+    }
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     margin-right: 25%;
 }
 
@@ -76,7 +103,7 @@ h1 {
     align-items: center;
 }
 
-.link{
+.link {
     margin-top: 5%;
 }
 
@@ -103,7 +130,7 @@ h1 {
 }
 
 .top-nav p {
-    color:#178582;
+    color: #178582;
     font-size: 35px;
     text-decoration: none;
 }
